@@ -1,6 +1,9 @@
-package core
+package goweb
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/zjiajun/go-core/common"
+)
 
 type person struct {
 	human
@@ -58,8 +61,8 @@ func (p *person) sayHi() {
 	fmt.Println("StructExample,person sai hi", p.Name, p.human)
 }
 
-func StructExample() {
-	defer fmt.Println(Separator)
+func structExample() {
+	defer fmt.Println(common.Separator)
 	person := createPerson()
 	setPersonValue(person, "newName", 123)
 	person.sayHi()

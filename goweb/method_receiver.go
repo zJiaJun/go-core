@@ -1,7 +1,8 @@
-package core
+package goweb
 
 import (
 	"fmt"
+	"github.com/zjiajun/go-core/common"
 	"math"
 )
 
@@ -20,8 +21,8 @@ func (c circle) area() float64 {
 	return c.radius * c.radius * math.Pi
 }
 
-func MethodReceiverExample() {
-	defer fmt.Println(Separator)
+func methodReceiverExample() {
+	defer fmt.Println(common.Separator)
 	r := rectangle{12, 2}
 	c := circle{3}
 	fmt.Println("MethodReceiverExample rectangle area", r.area())

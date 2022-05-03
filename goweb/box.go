@@ -1,6 +1,9 @@
-package core
+package goweb
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/zjiajun/go-core/common"
+)
 
 const (
 	WHITE = iota
@@ -50,8 +53,8 @@ func (c Color) string() string {
 	return strings[c]
 }
 
-func BoxExample() {
-	defer fmt.Println(Separator)
+func boxExample() {
+	defer fmt.Println(common.Separator)
 	boxes := BoxList{
 		Box{4, 4, 4, RED},
 		Box{10, 10, 1, YELLOW},

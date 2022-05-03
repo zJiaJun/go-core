@@ -1,6 +1,9 @@
-package core
+package goweb
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/zjiajun/go-core/common"
+)
 
 func init() {
 	fmt.Println("function init running...")
@@ -31,8 +34,8 @@ func isEven(val int) bool {
 	return false
 }
 
-func FunctionExample() {
-	defer fmt.Println(Separator)
+func functionAsTypeExample() {
+	defer fmt.Println(common.Separator)
 	var slice = []int{1, 2, 3, 4, 5, 6}
 	odd := filter(slice, isOdd)
 	fmt.Println("FunctionExample", odd)
