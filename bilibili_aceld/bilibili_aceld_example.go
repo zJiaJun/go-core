@@ -4,4 +4,6 @@ func Run() {
 	DeferExample()
 	ArrayExample()
 	SliceExample()
+	MapExample()
+	OopExample()
 }
