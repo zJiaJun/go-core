@@ -23,7 +23,7 @@ func changeBook2(book *Book) {
 	book.author = "qwe"
 }
 
-func OopExample() {
+func Oop101Example() {
 	defer fmt.Println(common.Separator)
 	var a myint = 10
 	fmt.Println("a =", a)

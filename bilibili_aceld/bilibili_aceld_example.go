@@ -5,5 +5,8 @@ func Run() {
 	ArrayExample()
 	SliceExample()
 	MapExample()
-	OopExample()
+	Oop101Example()
+	Oop102Example()
+	Oop103Example()
+	Oop104Example()
 }
