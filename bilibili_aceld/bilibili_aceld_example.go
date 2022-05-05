@@ -9,4 +9,5 @@ func Run() {
 	Oop102Example()
 	Oop103Example()
 	Oop104Example()
+	Oop105Example()
 }

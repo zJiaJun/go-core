@@ -44,8 +44,8 @@ type men interface {
 	sing(lyrics string)
 }
 
-type element interface {
-}
+type element interface{}
+
 type list []element
 type per struct {
 	name string
