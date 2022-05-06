@@ -35,7 +35,8 @@ func pair2Example() {
 	//w: <type:*os.File, value:"dev/tty"文件描述符>
 	var w io.Writer
 	w = r.(io.Writer)
-	w.Write([]byte("hello\n"))
+	c, err := w.Write([]byte("hello\n"))
+	fmt.Println(c)
 }
 
 type reader interface {
