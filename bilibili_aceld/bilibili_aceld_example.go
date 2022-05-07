@@ -11,4 +11,5 @@ func Run() {
 	Oop104Example()
 	Oop105Example()
 	Reflect111Example()
+	Reflect112Example()
 }
