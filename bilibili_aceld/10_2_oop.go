@@ -11,15 +11,15 @@ type Hero struct {
 	level int //写小,无法访问,私有的
 }
 
-func (this *Hero) Show() {
-	fmt.Println(this)
+func (h *Hero) Show() {
+	fmt.Println(h)
 }
-func (this *Hero) GetName() string {
-	return this.Name
+func (h *Hero) GetName() string {
+	return h.Name
 }
-func (this *Hero) SetName(newName string) {
+func (h *Hero) SetName(newName string) {
 	//*Hero, 如不加*, 就是副本,不是指针
-	this.Name = newName
+	h.Name = newName
 }
 
 func Oop102Example() {

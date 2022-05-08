@@ -18,13 +18,13 @@ type Cat struct {
 }
 
 //实现了AnimalInterface的三个方法
-func (this *Cat) Sleep() {
+func (c *Cat) Sleep() {
 	fmt.Println("Cat is sleep")
 }
-func (this *Cat) GetColor() string {
-	return this.color
+func (c *Cat) GetColor() string {
+	return c.color
 }
-func (this *Cat) GetType() string {
+func (c *Cat) GetType() string {
 	return "Cat"
 }
 
@@ -34,13 +34,13 @@ type Dog struct {
 }
 
 //实现了AnimalInterface的三个方法
-func (this *Dog) Sleep() {
+func (d *Dog) Sleep() {
 	fmt.Println("Dog is sleep")
 }
-func (this *Dog) GetColor() string {
-	return this.color
+func (d *Dog) GetColor() string {
+	return d.color
 }
-func (this *Dog) GetType() string {
+func (d *Dog) GetType() string {
 	return "Dog"
 }
 func showAnimal(animal AnimalInterface) {

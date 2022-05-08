@@ -10,10 +10,10 @@ type human struct {
 	sex  string
 }
 
-func (this *human) Eat() {
+func (h *human) Eat() {
 	fmt.Println("Human.Eat()...")
 }
-func (this *human) Walk() {
+func (h *human) Walk() {
 	fmt.Println("Human.Walk()...")
 }
 
@@ -23,12 +23,12 @@ type superMan struct {
 }
 
 //重定义父类的方法Eat()
-func (this *superMan) Eat() {
+func (s *superMan) Eat() {
 	fmt.Println("SuperMan.Eat()...")
 }
 
 //子类添加新方法
-func (this *superMan) Fly() {
+func (s *superMan) Fly() {
 	fmt.Println("SuperMan.Fly()...")
 }
 

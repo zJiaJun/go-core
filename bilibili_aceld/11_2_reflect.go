@@ -17,9 +17,9 @@ type reflectUser struct {
 	age  int
 }
 
-func (this reflectUser) Call() {
+func (r reflectUser) Call() {
 	fmt.Println("reflect user call")
-	fmt.Printf("%v\n", this)
+	fmt.Printf("%v\n", r)
 }
 
 func reflectUserVal(user interface{}) {

@@ -48,10 +48,10 @@ type writer interface {
 type bookObj struct {
 }
 
-func (this *bookObj) readBook() {
+func (b *bookObj) readBook() {
 	fmt.Println("read book")
 }
-func (this *bookObj) writeBook() {
+func (b *bookObj) writeBook() {
 	fmt.Println("write book")
 }
 
