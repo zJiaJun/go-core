@@ -13,4 +13,7 @@ func Run() {
 	Reflect111Example()
 	Reflect112Example()
 	Reflect113Example()
+	Goroutine12Example()
+	Channel131Example()
+	Channel132Example()
 }

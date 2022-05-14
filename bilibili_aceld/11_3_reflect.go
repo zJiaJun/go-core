@@ -28,5 +28,5 @@ func findTag(r interface{}) {
 func Reflect113Example() {
 	defer fmt.Println(common.Separator)
 	r := resume{"name", "sex"}
-	findTag(r)
+	findTag(&r)
 }
