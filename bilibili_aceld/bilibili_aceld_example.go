@@ -16,4 +16,6 @@ func Run() {
 	Goroutine12Example()
 	Channel131Example()
 	Channel132Example()
+	Channel133Example()
+	Channel134Example()
 }
