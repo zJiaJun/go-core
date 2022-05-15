@@ -1,4 +1,4 @@
-package bilibili_aceld
+package aceld
 
 import (
 	"fmt"
