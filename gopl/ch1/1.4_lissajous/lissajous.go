@@ -10,6 +10,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"strconv"
 	"time"
 )
 
@@ -24,17 +25,28 @@ func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		handler := func(w http.ResponseWriter, r *http.Request) {
-			lissajous(w)
+			lissajous(w, parseCycles(r))
 		}
 		http.HandleFunc("/", handler)
 		log.Fatal(http.ListenAndServe("localhost:8000", nil))
 		return
 	}
-	lissajous(os.Stdout)
+	lissajous(os.Stdout, 5)
 }
-func lissajous(out io.Writer) {
+
+func parseCycles(r *http.Request) float64 {
+	if err := r.ParseForm(); err != nil {
+		log.Print(err)
+	}
+	cycles, err := strconv.ParseFloat(r.Form.Get("cycles"), 32)
+	if err != nil {
+		log.Print(err)
+	}
+	return cycles
+}
+func lissajous(out io.Writer, cycles float64) {
 	const (
-		cycles  = 5
+		//cycles  = 5
 		res     = 0.001
 		size    = 100
 		nframes = 64
