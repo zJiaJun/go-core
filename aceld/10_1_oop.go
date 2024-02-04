@@ -1,14 +1,14 @@
-package aceld
+package main
 
 import (
 	"fmt"
 	"github.com/zjiajun/go-core/common"
 )
 
-//声明一种新的数据类型myint,是int的别名
+// 声明一种新的数据类型myint,是int的别名
 type myint int
 
-//定义一个结构体
+// 定义一个结构体
 type Book struct {
 	title  string
 	author string

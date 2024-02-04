@@ -1,4 +1,4 @@
-package aceld
+package main
 
 import (
 	"fmt"
@@ -14,10 +14,10 @@ func newTask() {
 }
 
 /*
-	B
-	B.defer
-	A
-	A.defer
+B
+B.defer
+A
+A.defer
 */
 func anonymousFunc() {
 	go func() {

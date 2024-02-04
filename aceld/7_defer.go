@@ -1,4 +1,4 @@
-package aceld
+package main
 
 import (
 	"fmt"
@@ -29,16 +29,16 @@ func returnAndDefer() int {
 }
 
 /*
-	1.defer 执行顺序, 先进后出
-	deferFun1 入栈
-	deferFun2 入栈
-	deferFun3 入栈
+1.defer 执行顺序, 先进后出
+deferFun1 入栈
+deferFun2 入栈
+deferFun3 入栈
 
-	deferFun3 出栈
-	deferFun2 出栈
-	deferFun1 出栈
+deferFun3 出栈
+deferFun2 出栈
+deferFun1 出栈
 
-	2.先return执行, 后defer执行
+2.先return执行, 后defer执行
 */
 func DeferExample() {
 	defer fmt.Println(common.Separator)

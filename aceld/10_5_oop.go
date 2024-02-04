@@ -1,11 +1,11 @@
-package aceld
+package main
 
 import (
 	"fmt"
 	"github.com/zjiajun/go-core/common"
 )
 
-//interface{}是万能数据类型
+// interface{}是万能数据类型
 func myFunc(arg interface{}) {
 	fmt.Println("myFunc called", arg)
 	// interface{} 如何区分, 到底是什么类型?

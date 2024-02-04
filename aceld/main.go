@@ -1,6 +1,6 @@
-package aceld
+package main
 
-func Run() {
+func main() {
 	DeferExample()
 	ArrayExample()
 	SliceExample()

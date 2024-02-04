@@ -1,11 +1,11 @@
-package aceld
+package main
 
 import (
 	"fmt"
 	"github.com/zjiajun/go-core/common"
 )
 
-//类名首字母大写,表示其他包能够访问
+// 类名首字母大写,表示其他包能够访问
 type Hero struct {
 	Name  string
 	level int //写小,无法访问,私有的

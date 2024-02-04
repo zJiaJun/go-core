@@ -1,23 +1,23 @@
-package aceld
+package main
 
 import (
 	"fmt"
 	"github.com/zjiajun/go-core/common"
 )
 
-//接口,本质是一个指针
+// 接口,本质是一个指针
 type AnimalInterface interface {
 	Sleep()
 	GetColor() string
 	GetType() string
 }
 
-//具体的类
+// 具体的类
 type Cat struct {
 	color string
 }
 
-//实现了AnimalInterface的三个方法
+// 实现了AnimalInterface的三个方法
 func (c *Cat) Sleep() {
 	fmt.Println("Cat is sleep")
 }
@@ -28,12 +28,12 @@ func (c *Cat) GetType() string {
 	return "Cat"
 }
 
-//具体的类
+// 具体的类
 type Dog struct {
 	color string
 }
 
-//实现了AnimalInterface的三个方法
+// 实现了AnimalInterface的三个方法
 func (d *Dog) Sleep() {
 	fmt.Println("Dog is sleep")
 }

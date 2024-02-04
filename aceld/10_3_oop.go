@@ -1,4 +1,4 @@
-package aceld
+package main
 
 import (
 	"fmt"
@@ -22,12 +22,12 @@ type superMan struct {
 	level int
 }
 
-//重定义父类的方法Eat()
+// 重定义父类的方法Eat()
 func (s *superMan) Eat() {
 	fmt.Println("SuperMan.Eat()...")
 }
 
-//子类添加新方法
+// 子类添加新方法
 func (s *superMan) Fly() {
 	fmt.Println("SuperMan.Fly()...")
 }
