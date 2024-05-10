@@ -1,4 +1,4 @@
-module base3
+module d6-template
 
 go 1.22.2
 

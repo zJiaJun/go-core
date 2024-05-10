@@ -1,4 +1,4 @@
-module base3
+module d5-middleware
 
 go 1.22.2
 

@@ -1,4 +1,4 @@
-module base3
+module d4-group
 
 go 1.22.2
 

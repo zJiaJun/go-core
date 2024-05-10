@@ -1,4 +1,4 @@
-module base3
+module d7-painc-recover
 
 go 1.22.2
 

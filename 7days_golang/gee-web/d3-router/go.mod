@@ -1,4 +1,4 @@
-module base3
+module d3-router
 
 go 1.22.2
 
