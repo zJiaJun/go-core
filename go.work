@@ -1,0 +1,7 @@
+go 1.24.2
+
+use (
+	./aceld
+	./best_practice
+	./common
+)
