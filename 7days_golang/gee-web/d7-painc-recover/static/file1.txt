@@ -1,4 +1,0 @@
-This is file1.txt.
-Apple
-Banana
-Cherry
