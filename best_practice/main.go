@@ -1,14 +1,16 @@
 package main
 
 import (
-	"github.com/zjiajun/go-core/best_practice/factory"
+	"github.com/zjiajun/go-core/best_practice/context"
+	"time"
 )
 
 func main() {
-	complexVar := complex(3, -1.18)
-	println(complexVar)
-	a := imag(complexVar)
-	b := real(complexVar)
-	println(a, b)
-	factory.Run()
+	//context.UseContextStopGoroutine()
+	//context.UseChanStopGoroutine()
+	//context.UseContextStopMultipleGoroutine()
+	//context.UseChanTimeout()
+	//context.UseChanPipeline()
+	context.UseChanFuture()
+	time.Sleep(1 * time.Hour)
 }
