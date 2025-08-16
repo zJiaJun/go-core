@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/zjiajun/go-core/best_practice/context"
+	"github.com/zjiajun/go-core/best_practice/reflect"
 	"time"
 )
 
@@ -11,6 +11,9 @@ func main() {
 	//context.UseContextStopMultipleGoroutine()
 	//context.UseChanTimeout()
 	//context.UseChanPipeline()
-	context.UseChanFuture()
+	//context.UseChanFuture()
+	//reflect.SetVal()
+	//reflect.SetStructFieldValue()
+	reflect.GetKind()
 	time.Sleep(1 * time.Hour)
 }
